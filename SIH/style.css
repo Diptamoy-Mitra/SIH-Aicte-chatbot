@@ -15,6 +15,46 @@ body {
     background-size: cover;
 }
 
+.chat {
+    height: 300px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 90%;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: .711
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    border: 0;
+    padding: 15px;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
 a {
     text-decoration: none;
 }
@@ -115,5 +155,13 @@ input[type=checkbox] {
     }
     .dropdown li:hover {
         background-color: rgb(102, 132, 179);
+    }
+    .chat {
+        width: 75vw;
+        margin: 10vw;
+    }
+    .container {
+        flex-direction: column;
+        justify-content: flex-start;
     }
 }
